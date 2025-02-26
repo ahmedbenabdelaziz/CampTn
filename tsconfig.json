@@ -1,10 +1,12 @@
-/* To learn more about Typescript configuration file: https://www.typescriptlang.org/docs/handbook/tsconfig-json.html. */
-/* To learn more about Angular compiler options: https://angular.dev/reference/configs/angular-compiler-options. */
 {
   "compileOnSave": false,
   "compilerOptions": {
+   
     "outDir": "./dist/out-tsc",
     "strict": true,
+      "paths": {
+          "jquery": ["./node_modules/jquery/dist/jquery.min.js"]
+        },
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,

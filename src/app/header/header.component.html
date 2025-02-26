@@ -1,0 +1,408 @@
+<style>@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&family=Urbanist:wght@100;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-size: 1.6rem;
+  font-family: "Urbanist", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.btn {
+  cursor: pointer;
+}
+.containere {
+  max-width: 124rem;
+  padding: 0rem 1.5rem;
+  margin: 0 auto;
+}
+.section {
+  margin-top: 10rem;
+}
+
+/* headera */
+.headera {
+  width: 100%;
+  height: 100vh;
+  position: relative; /* au lieu de fixed */
+  z-index: auto; /* pour éviter qu'il reste au-dessus des autres */
+
+  background-image: url("/assets/images/Banner.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.nava {
+  width: 100%;
+  height: 10rem;
+  transition: all 0.3s ease;
+}
+.nava_containere {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nava_logoa_img {
+  max-width: 60%;
+}
+.nava_list {
+  display: flex;
+  align-items: center;
+}
+.nava_item {
+  margin: 0rem 0.7rem;
+}
+.nava_link {
+  color: #fff;
+  font-weight: 400;
+  padding: 0.5rem 0.7rem;
+}
+.nava_btn {
+  margin-left: 2rem;
+  color: #fff;
+  font-weight: 500;
+  padding: 1rem 2rem;
+  border: 1px solid #fff;
+  border-radius: 1rem;
+}
+.headera_wrapper {
+  width: 100%;
+  height: calc(100vh - 10rem);
+  display: flex;
+  align-items: center;
+  text-align: left;
+  justify-content: center;
+  text-align: center;
+}
+.headera_secondary_title {
+  margin-bottom: 1.5rem;
+  color: #fff;
+  font-weight: 400;
+}
+.headera_main_title {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+.headera_btn {
+  display: flex;
+  align-items: center;
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  justify-content: center;
+  margin: 0 auto;
+}
+.headera_btn > span {
+  margin-left: 1.5rem;
+  color: #fff;
+}
+
+/* about */
+.about_containere {
+  width: 100%;
+}
+.about_headera {
+  width: 100%;
+  text-align: center;
+}
+.about_headera_p {
+  width: 50%;
+  margin: 0 auto;
+}
+.about_headera_secondary_title {
+  color: #97a483;
+}
+.about_headera_primary_title {
+  margin: 1.2rem 0rem;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.icon_boxes {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-gap: 1rem;
+  margin-top: 6rem;
+}
+.icon_box {
+  text-align: center;
+}
+.icon {
+  width: 25%;
+}
+.icon_p {
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+.about_cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+  grid-gap: 3rem;
+  margin-top: 6rem;
+}
+.card_img {
+  width: 100%;
+}
+.card_title {
+  margin: 1.2rem 0rem;
+}
+
+/* activity */
+.activity_containere {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-gap: 3rem;
+}
+.activity_img {
+  max-width: 80%;
+}
+.about_headera_primary_title_2 {
+  margin-bottom: 5rem;
+  font-size: 3.6rem;
+}
+.activity_right {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-gap: 2rem;
+}
+.icon_box_2 {
+  text-align: left;
+}
+.icon_box_margin_top {
+  margin-top: 4rem;
+}
+
+/* bonfire */
+.bonfire {
+  width: 100%;
+  height: 80vh;
+  background-size: cover;
+  background-position: center center;
+}
+.bonfire_containere {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bonfire_containere > span {
+  text-align: center;
+}
+.bonfire_title {
+  font-size: 4.2rem;
+  color: #fff;
+  margin-bottom: 4rem;
+}
+.bonfire_btn {
+  background-color: transparent;
+  outline: none;
+  border: 1px solid #fff;
+  padding: 1.3rem 3rem;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* booking */
+.booking_cards {
+  margin-top: 6rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  grid-gap: 3rem;
+}
+.booking_card {
+  width: 100%;
+}
+.booking_img {
+  width: 100%;
+}
+.booking_title {
+  margin: 2rem 0rem;
+  color: #345e40;
+}
+.booking_p {
+  margin-bottom: 2rem;
+}
+.booking_btn {
+  border: none;
+  outline: none;
+  padding: 1rem 2.2rem;
+  background-color: #345e40;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+/* blog */
+.blog_headera_title {
+  color: #97a483;
+}
+.blogs {
+  margin-top: 6rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 3rem;
+}
+.blog_img {
+  width: 100%;
+}
+.blog_title {
+  margin: 2rem 0rem;
+}
+.blog_link {
+  font-weight: 600;
+  color: #97a483;
+}
+.footer {
+  margin-top: 10rem;
+  width: 100%;
+  height: 5rem;
+  background-color: #345e40;
+}
+.footer_containere {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer_p {
+  color: #fff;
+}
+.menu_icon {
+  display: none;
+  cursor: pointer;
+}
+.w-6 {
+  width: 4rem;
+  fill: #fff;
+}
+.mobile_nava_list {
+  position: absolute;
+  z-index: 99;
+  display: none;
+  width: 100%;
+  background-color: #3f3f3f;
+  padding: 2rem 0rem;
+  transition: all 0.4s ease;
+}
+.mobile_nava_item {
+  padding: 1rem 2rem;
+}
+.mobile_nava_link {
+  color: #fff;
+}
+.mobile_nava_btn {
+  margin-top: 2rem;
+  color: #fff;
+  font-weight: 500;
+  padding: 1rem 2rem;
+  border: 1px solid #fff;
+  border-radius: 1rem;
+}
+.mobile_nava_link_last {
+  margin-bottom: 2rem;
+}
+.mobile_nava_toggle {
+  margin-top: -100rem;
+}
+@media only screen and (max-width: 720px) {
+  .nava {
+    background-color: #3f3f3f;
+    height: 9rem;
+  }
+  .nava_list {
+    display: none;
+  }
+  .menu_icon {
+    display: block;
+  }
+  .mobile_nava_list {
+    display: block;
+  }
+}
+</style>
+<header class="headera">
+    <nav class="nava">
+      <div class="containere nava_containere">
+        <a href="#" class="nava_logoa"
+          ><img src="./images/logo.png" alt="" class="nava_logoa_img"
+        /></a>
+        <ul class="nava_list">
+          <li class="nava_item"><a href="#" class="nava_link">Home</a></li>
+          <li class="nava_item"><a href="#" class="nava_link">About</a></li>
+          <li class="nava_item">
+            <a href="#" class="nava_link">Campground</a>
+          </li>
+          <li class="nava_item"><a href="#" class="nava_link">Contact</a></li>
+          <li class="nava_item"><a href="" class="nava_btn">Book Now</a></li>
+        </ul>
+        <span class="menu_icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="white"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        </span>
+      </div>
+      <ul class="mobile_nava_list mobile_nava_toggle">
+        <li class="mobile_nava_item">
+          <a href="#" class="mobile_nava_link">Home</a>
+        </li>
+        <li class="mobile_nava_item">
+          <a href="#" class="mobile_nava_link">About</a>
+        </li>
+        <li class="mobile_nava_item">
+          <a href="#" class="mobile_nava_link">Campground</a>
+        </li>
+        <li class="mobile_nava_item mobile_nava_link_last">
+          <a href="#" class="mobile_nava_link">Contact</a>
+        </li>
+        <li class="mobile_nava_item">
+          <a href="" class="mobile_nava_btn">Book Now</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="headera_wrapper">
+      <div class="containere headera_content">
+        <h4 class="headera_secondary_title">Let’s Make more Memories</h4>
+        <h1 class="headera_main_title">
+          CampTun is more than just a word, <br />
+          it’s an experience!
+        </h1>
+        <button class="headera_btn">
+          <img src="./images/video-icon.png" alt="" class="headera_btn_icon" />
+          <span>Watch this video</span>
+        </button>
+      </div>
+    </div>
+  </header>

@@ -1,0 +1,67 @@
+
+
+// Global variables
+@use 'variables';
+
+// Global Mixins
+@use 'mixin';
+
+// Global Extend
+@use 'extend';
+
+// common
+@use 'common';
+
+// Header
+@use 'sections/header';
+
+// Hero
+@use 'sections/hero';
+
+// About
+@use 'sections/about';
+
+// Elements
+@use 'sections/elements';
+
+// Features
+@use 'sections/features';
+
+// Services
+@use 'sections/services';
+
+// Activity
+@use 'sections/activity';
+
+// We
+@use 'sections/we';
+
+// Gallery
+@use 'sections/gallery';
+
+// Booking
+@use 'sections/booking';
+
+// Places
+@use 'sections/places';
+
+// Testimonials
+@use 'sections/testimonials';
+
+// Shop
+@use 'sections/shop';
+
+// Blog
+@use 'sections/blog';
+
+// Contact
+@use 'sections/contact';
+
+// Footer
+@use 'sections/footer';
+
+// Sliders
+@use 'sections/sliders';
+
+// Wrapper
+@use 'sections/wrapper';
