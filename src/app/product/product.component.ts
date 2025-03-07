@@ -13,8 +13,29 @@ declare var WOW: any;
 
 })
 export class ProductComponent implements AfterViewInit {
+    thumbnails = [
+    'assets/images/product-thumb-1.jpg',
+    'assets/images/product-thumb-2.jpg',
+    'assets/images/product-thumb-3.jpg'
+  ];
   ngAfterViewInit(): void {
     if (typeof WOW !== 'undefined') {
       new WOW().init();
     }
+    $('.product-big-slider').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: true,
+      fade: true,
+      asNavFor: '.product-thumb-slider'
+    });
+
+    $('.product-thumb-slider').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      asNavFor: '.product-big-slider',
+      dots: true,
+      focusOnSelect: true
+    });
+  
   }}

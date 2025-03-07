@@ -5652,149 +5652,48 @@
             <div class="container">
                 <div class="product-details-wrapper">
                     <div class="row align-items-xl-center">
+                      <div class="row align-items-xl-center">
+                        <div class="col-lg-6">
+                       
+                        </div>
+                      </div>
+                      
+                        <div class="row align-items-xl-center">
                         <div class="col-lg-6">
                             <!--=== Product Gallery ===-->
                             <div class="product-gallery-area mb-50 wow fadeInLeft">
                                 <div class="product-big-slider mb-30">
-                                    <!-- Images principales -->
-                                    <div class="product-img active">
-                                        <img src="assets/images/shop/product-big-1.jpg" alt="Product">
+                                    <div class="product-img">
+                                        <a href="assets/images/hiking-backpack-made-durable-leather-material-generated-by-ai.jpg" class="img-popup"><img src="assets/images/shop/product-big-1.jpg" alt="Product"></a>
                                     </div>
                                     <div class="product-img">
-                                        <img src="assets/images/shop/product-big-2.jpg" alt="Product">
+                                        <a href="assets/images/image-5.png" class="img-popup"><img src="assets/images/shop/product-big-2.jpg" alt="Product"></a>
                                     </div>
                                     <div class="product-img">
-                                        <img src="assets/images/shop/product-big-3.jpg" alt="Product">
+                                        <a href="assets/images/shop/product-big-3.jpg" class="img-popup"><img src="assets/images/shop/product-big-3.jpg" alt="Product"></a>
                                     </div>
                                     <div class="product-img">
-                                        <img src="assets/images/shop/product-big-4.jpg" alt="Product">
+                                        <a href="assets/images/shop/product-big-2.jpg" class="img-popup"><img src="assets/images/shop/product-big-3.jpg" alt="Product"></a>
                                     </div>
                                 </div>
-                                
-                                <!-- Vignettes -->
                                 <div class="product-thumb-slider">
-                                    <div class="thumb-item active" data-index="0">
-                                        <img src="src/assets/images/blog-1.png"alt="Thumbnail">
+                                    <div class="product-img">
+                                        <img src="assets/images/shop/product-thumb-1.jpg" alt="Product">
                                     </div>
-                                    <div class="thumb-item" data-index="1">
-                                        <img src="assets/images/shop/product-thumb-2.jpg" alt="Thumbnail">
+                                    <div class="product-img">
+                                        <img src="assets/images/shop/product-thumb-2.jpg" alt="Product">
                                     </div>
-                                    <div class="thumb-item" data-index="2">
-                                        <img src="assets/images/shop/product-thumb-3.jpg" alt="Thumbnail">
+                                    <div class="product-img">
+                                        <img src="assets/images/shop/product-thumb-3.jpg" alt="Product">
                                     </div>
-                                    <div class="thumb-item" data-index="3">
-                                        <img src="assets/images/shop/product-thumb-4.jpg" alt="Thumbnail">
+                                    <div class="product-img">
+                                        <img src="assets/images/shop/product-thumb-2.jpg" alt="Product">
                                     </div>
                                 </div>
                             </div>
-                            
-                            <style>
-                            /* CSS personnalisé */
-                            .product-gallery-area {
-                                position: relative;
-                                max-width: 800px;
-                                margin: 0 auto;
-                            }
-                            
-                            .product-big-slider {
-                                position: relative;
-                                overflow: hidden;
-                                border-radius: 8px;
-                            }
-                            
-                            .product-big-slider .product-img {
-                                position: absolute;
-                                opacity: 0;
-                                transition: opacity 0.5s ease-in-out;
-                                width: 100%;
-                            }
-                            
-                            .product-big-slider .product-img.active {
-                                opacity: 1;
-                                position: relative;
-                            }
-                            
-                            .product-thumb-slider {
-                                display: flex;
-                                gap: 15px;
-                                margin-top: 20px;
-                                justify-content: center;
-                            }
-                            
-                            .thumb-item {
-                                cursor: pointer;
-                                border: 2px solid transparent;
-                                border-radius: 4px;
-                                transition: all 0.3s ease;
-                                width: 100px;
-                                overflow: hidden;
-                            }
-                            
-                            .thumb-item.active {
-                                border-color: #007bff;
-                            }
-                            
-                            .thumb-item img {
-                                width: 100%;
-                                height: auto;
-                                display: block;
-                            }
-                            </style>
-                            
-                            <script>
-                            // JavaScript personnalisé
-                            document.addEventListener('DOMContentLoaded', function() {
-                                const mainSlider = document.querySelector('.product-big-slider');
-                                const thumbnails = document.querySelectorAll('.thumb-item');
-                                let currentIndex = 0;
-                                let autoPlayInterval;
-                            
-                                function showSlide(index) {
-                                    // Retirer les classes actives
-                                    document.querySelectorAll('.product-img').forEach(img => img.classList.remove('active'));
-                                    document.querySelectorAll('.thumb-item').forEach(thumb => thumb.classList.remove('active'));
-                                    
-                                    // Ajouter les classes actives
-                                    mainSlider.children[index].classList.add('active');
-                                    thumbnails[index].classList.add('active');
-                                    currentIndex = index;
-                                }
-                            
-                                // Navigation par vignettes
-                                thumbnails.forEach((thumb, index) => {
-                                    thumb.addEventListener('click', () => {
-                                        showSlide(index);
-                                        resetAutoplay();
-                                    });
-                                });
-                            
-                                // Auto-play
-                                function startAutoplay() {
-                                    autoPlayInterval = setInterval(() => {
-                                        currentIndex = (currentIndex + 1) % thumbnails.length;
-                                        showSlide(currentIndex);
-                                    }, 5000); // Change toutes les 5 secondes
-                                }
-                            
-                                function resetAutoplay() {
-                                    clearInterval(autoPlayInterval);
-                                    startAutoplay();
-                                }
-                            
-                                // Initialisation
-                                showSlide(0);
-                                startAutoplay();
-                            
-                                // Pause au survol
-                                mainSlider.addEventListener('mouseenter', () => clearInterval(autoPlayInterval));
-                                mainSlider.addEventListener('mouseleave', startAutoplay)
-                            });
-                            </script>
                         </div>
                         <div class="col-lg-6">
                             <div class="product-info mb-50 pl-lg-70 wow fadeInRight">
-                              <h1>  </h1>
-                              <p></p>
                                 <h4 class="title">Womens Stylish Bag</h4>
                                 <ul class="ratings">
                                     <li><i class="fas fa-star"></i></li>
@@ -5813,12 +5712,12 @@
                                     <ul>
                                         <li>
                                             <div class="quantity-input">
-                                                <button class="quantity-down"><i class="far fa-minus"></i></button>
+                                                <button class="quantity-down"><i class="fas fa-minus"></i></button>
                                                 <input class="quantity" type="text" value="1" name="quantity">
                                                 <button class="quantity-up"><i class="fas fa-plus"></i></button>
                                             </div>
                                         </li>
-                                        <li><button class="main-btn primary-btn">Add to cart<i class="far fa-paper-plane"></i></button></li>
+                                        <li><button class="main-btn primary-btn">Add to cart<i class="fas fa-paper-plane"></i></button></li>
                                     </ul>
                                 </div>
                                 <ul class="product-meta pb-35 mb-40">
@@ -5834,6 +5733,7 @@
                                 </ul>
                             </div>
                         </div>
+                    </div>
                     </div>
                     <div class="row">
                         <div class="col-xl-8">
@@ -5922,8 +5822,8 @@
                             <div class="sidebar-widget widget-product-banner mb-40 wow fadeInUp">
                               <div class="banner-content text-center">
                                 <h4 class="title">Black Winter T-shirt</h4>
-                                <img src="assets/images/shop/mockup.png" alt="Banner Image">
-                                <a routerLink="/contact" class="main-btn secondary-btn">Shop Now <i class="far fa-paper-plane"></i></a>
+                                <img src="assets/images/hiking-backpack-made-durable-leather-material-generated-by-ai.jpg" alt="Banner Image">
+                                <a routerLink="/contact" class="main-btn secondary-btn">Shop Now <i class="fas fa-paper-plane"></i></a>
                               </div>
                             </div>
                           </div>
@@ -5946,7 +5846,7 @@
                     <!--=== Single Product Item ===-->
                     <div class="single-product-item mb-50">
                         <div class="img-holder">
-                            <img src="assets/images/shop/product-1.jpg" alt="Product Image">
+                            <img src="assets/images/image-1.png" alt="Product Image">
                             <div class="tag">
                                 <span class="off">10% OFF</span>
                             </div>
@@ -5968,7 +5868,7 @@
                     <!--=== Single Product Item ===-->
                     <div class="single-product-item mb-50">
                         <div class="img-holder">
-                            <img src="assets/images/shop/product-2.jpg" alt="Product Image">
+                            <img src="assets/images/red-tent-stands-ground-somewhere-mountains.jpg" alt="Product Image">
                         </div>
                         <div class="content">
                             <div class="info">
@@ -5987,7 +5887,7 @@
                     <!--=== Single Product Item ===-->
                     <div class="single-product-item mb-50">
                         <div class="img-holder">
-                            <img src="assets/images/shop/product-3.jpg" alt="Product Image">
+                            <img src="assets/images/bg.png" alt="Product Image">
                             <div class="tag">
                                 <span class="feat">Features</span>
                                 <span class="off">10% OFF</span>
@@ -6010,7 +5910,7 @@
                     <!--=== Single Product Item ===-->
                     <div class="single-product-item mb-50">
                         <div class="img-holder">
-                            <img src="assets/images/shop/product-4.jpg" alt="Product Image">
+                            <img src="assets/images/Banner.png" alt="Product Image">
                         </div>
                         <div class="content">
                             <div class="info">
@@ -6028,10 +5928,7 @@
                     </div>
                 </div>
             </div>
-        </section><!--====== End Recent Product Section ======-->
-        <!--====== Start Gallery Section ======-->
-       <!--====== End Gallery Section ======-->
-        <!--====== Start Footer ======-->
+          </section>
         <footer class="main-footer black-bg pt-230">
             <div class="container">
                 <!--=== Footer CTA ===-->
@@ -6046,7 +5943,7 @@
                                 <div class="content">
                                     <h3 class="title">Need Any Support For
                                         Tour & Travels ?</h3>
-                                    <a href="#" class="icon-btn"><i class="far fa-long-arrow-right"></i></a>
+                                    <a href="#" class="icon-btn"><i class="fas fa-long-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -6058,7 +5955,7 @@
                                 </div>
                                 <div class="content">
                                     <h3 class="title">Ready to Get Started With Vacations!</h3>
-                                    <a href="#" class="icon-btn"><i class="far fa-long-arrow-right"></i></a>
+                                    <a href="#" class="icon-btn"><i class="fas fa-long-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -6109,7 +6006,7 @@
                                         physical exercise except obtain</p>
                                     <form>
                                         <div class="form_group">
-                                            <label><i class="far fa-paper-plane"></i></label>
+                                            <label><i class="fas fa-paper-plane"></i></label>
                                             <input type="email" class="form_control" placeholder="Email Address" name="email" required>
                                         </div>
                                     </form>
@@ -6142,7 +6039,7 @@
             </div>
         </footer><!--====== End Footer ======-->
         <!--====== Back To Top  ======-->
-        <a href="#" class="back-to-top" ><i class="far fa-angle-up"></i></a>
+        <a href="#" class="back-to-top" ><i class="fas fa-angle-up"></i></a>
         <!--====== Jquery js ======-->
         <script src="assets/vendor/jquery-3.6.0.min.js"></script>
         <!--====== Bootstrap js ======-->

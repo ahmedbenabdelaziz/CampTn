@@ -79,7 +79,6 @@
   "node_modules/nice-select2/dist/js/nice-select2.js",
   "node_modules/slick-carousel/slick/slick.min.js",
   "node_modules/jquery-ui/dist/jquery-ui.min.js",
-  "node_modules/slick-carousel/slick/slick.min.js",
   "node_modules/magnific-popup/dist/jquery.magnific-popup.min.js",
   "node_modules/nice-select2/dist/js/nice-select2.min.js",
   "src/assets/vendor/popper/popper.min.js",
@@ -88,6 +87,8 @@
   "src/assets/vendor/magnific-popup/dist/jquery.magnific-popup.min.js",
   "src/assets/vendor/isotope.min.js",
   "src/assets/vendor/imagesloaded.min.js",
+  "node_modules/animate.css/animate.min.css",
+
   "src/assets/vendor/jquery.counterup.min.js",
   "src/assets/vendor/jquery.waypoints.js",
   "src/assets/vendor/nice-select/js/jquery.nice-select.min.js",

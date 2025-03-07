@@ -5397,6 +5397,17 @@ ul.slick-dots li.slick-active {
 .black-bg .sub-title {
   background-color: rgba(247, 146, 30, 0.1);
 }
+/* Assure que les images du carrousel ne dépassent pas la taille de leur conteneur */
+.slider-active-5-item .single-gallery-item {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.slider-active-5-item .single-gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
 .skill-wrapper {
   padding: 40px 45px 34px;
