@@ -40,7 +40,11 @@
               }
             ],
         "styles": [
+            "node_modules/bootstrap/dist/css/bootstrap.min.css",
+  "node_modules/font-awesome/css/font-awesome.min.css",
           "src/style.css",
+           "src/assets/cssa/ui.css",
+  "src/assets/cssa/responsive.css",
           "node_modules/nice-select2/dist/css/nice-select2.css",
           "node_modules/@fortawesome/fontawesome-free/css/all.min.css"
 ,
@@ -72,7 +76,8 @@
   "node_modules/nice-select2/dist/css/nice-select2.css"
 ],
 "scripts": [
-  "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
+  "src/assets/jsa/script.js",
+    "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
   "node_modules/jquery/dist/jquery.min.js",
   "node_modules/owl.carousel/dist/owl.carousel.min.js",
   "node_modules/wow.js/dist/wow.min.js",

@@ -19,7 +19,35 @@
 </script>
 
       
-   
+<header>
+    <div class="nav ">
+        <a href="" class="logo">
+            <img src="assets/images copy/logo.png" alt="" width="10%"/>
+        </a>
+        <div class="navbar">
+            <a href="#" class="nav-link">Categorie</a>
+            <a href="#" class="nav-link">Products</a>
+            <a href="#" class="nav-link">Blog</a>
+            <a href="#" class="nav-link">Contact</a>
+        </div>
+        <div class="nav-right">
+            <li class="ri-search-2-line"></li>
+            <a href="" class="login-btn">Panier</a>
+            <div class="menu-icon">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+
+            </div>
+        </div>
+    </div>
+</header>
+<style>p {
+    padding: 20px; /* Ajoute un padding de 20px sur les 4 côtés */
+}
+</style>
+<p style="padding: 20px;"></p>
+
         <section class="features-section gray-bg pt-100 pb-100">
             <div class="container">
                 <div class="row">
@@ -105,7 +133,7 @@
                     <!--=== Features Item ===-->
                     <div class="single-features-item-three">
                         <div class="img-holder">
-                            <img src="assets/images/features/feat-14.jpg" alt="Features Image">
+                            <img src="assets/images/Banner.png" alt="Features Image">
                         </div>
                         <div class="content">
                             <h6>Forest Tent Camping,
@@ -145,7 +173,7 @@
                                         <li><i class="fas fa-star"></i></li>
                                         <li><a href="#">(4.9)</a></li>
                                     </ul>
-                                    <h4 class="title"><a href="tour-details.html">Sitting on Boat Spreading Her Arms</a></h4>
+                                    <h4 class="title"><a [routerLink]="['/DetailsComp']">Sitting on Boat Spreading Her Arms</a></h4>
                                     <p class="location"><i class="fas fa-map-marker-alt"></i>North Province, Maldives</p>
                                     <p class="price"><i class="fas fa-usd-circle"></i>Price<span class="currency">$</span>93.65</p>
                                     <div class="meta">

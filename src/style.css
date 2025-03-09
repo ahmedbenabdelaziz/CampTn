@@ -773,12 +773,17 @@ header{
 /* Style du carousel personnalisé */
 .custom-carousel {
     position: relative;
-    max-width: 80%;
+    max-width: 75%;
+    margin: 0 auto;
+}
+.custom-ca {
+    position: relative;
+    max-width: 100%;
     margin: 0 auto;
 }
 .custom-carousele {
     position: relative;
-    max-width: 90%;
+    max-width: 80%;
     margin: 0 auto;
 }
 .carousel-container {
